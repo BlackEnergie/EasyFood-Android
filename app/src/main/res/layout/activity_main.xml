@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.example.romain.easyfood.MainActivity">
+
+    <TextView
+        android:id="@+id/labelConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:text="Connexion :"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/txtId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:text="modal@gmail.com"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:background="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelConnexion"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/labelMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:text="Mot de passe : "
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/txtMdp"
+        app:layout_constraintTop_toBottomOf="@+id/txtId" />
+
+    <EditText
+        android:id="@+id/txtMdp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="test"
+        android:textAlignment="center"
+        android:background="@android:color/background_light"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/labelMdp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtId"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#FEA50A"
+        android:text="Valider"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEffacer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMdp" />
+
+    <Button
+        android:id="@+id/btnEffacer"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#FEA50A"
+        android:text="Effacer"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnValider"
+        app:layout_constraintTop_toTopOf="@+id/btnValider" />
+
+
+</android.support.constraint.ConstraintLayout>

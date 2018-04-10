@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPlat">
+    <TextView
+        android:id="@+id/lblnomPlat"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom du Plat : "
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/nomPlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/lblnomPlat"
+
+        />
+    <TextView
+        android:id="@+id/lblTypePlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:text="Type de Plat : "
+        app:layout_constraintTop_toBottomOf="@+id/nomPlat"
+        />
+    <TextView
+        android:id="@+id/typePlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/lblTypePlat"
+        />
+
+    <TextView
+        android:id="@+id/lblPrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prix : "
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/typePlat"
+        />
+    <TextView
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrix"
+        />
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desription : "
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/prix"
+        />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDescription"
+        />
+
+    <Button
+        android:id="@+id/btnAjouterComm"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#FEA50A"
+        android:text="Ajouter un commentaire"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="visible"
+         app:layout_constraintTop_toBottomOf="@+id/description"
+        />
+
+    <ImageView
+        android:id="@+id/imgCom"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        app:srcCompat="@mipmap/comvalid"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        />
+
+    <TextView
+        android:id="@+id/lblCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plat évalué !"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintLeft_toRightOf="@+id/imgCom"
+         />
+
+</android.support.constraint.ConstraintLayout>
